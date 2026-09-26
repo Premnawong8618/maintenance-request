@@ -1,0 +1,67 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "คอม",
+      "icon": "monitor"
+    },
+    {
+      "id": 2,
+      "name": "โน็ตบุ๊ค",
+      "icon": "laptop"
+    },
+    {
+      "id": 3,
+      "name": "เครื่องพิม",
+      "icon": "printer"
+    },
+    {
+      "id": 4,
+      "name": "อุปกรณ์เครือข่าย",
+      "icon": "wifi"
+    }
+  ],
+  "requests": [
+    {
+      "tracking_code": "REQ-2026-2325",
+      "reporter_name": "Prem",
+      "equipment_name": "โน็ตบุ๊ค",
+      "equipment_model": "MacBook Pro M2 Max",
+      "issue_description": "เครื่องเปิดไม่ติด ไฟไม่เข้า",
+      "department": "IT Department",
+      "location": "Building 2 Floor 3 Room 308",
+      "phone": "089-112-3344",
+      "urgency": "normal",
+      "status": "completed",
+      "technician_name": "prem",
+      "technician_notes": "",
+      "estimated_completion": "2026-09-26",
+      "repair_cost": 0,
+      "image_url": null,
+      "created_at": "2026-09-25 14:16:16",
+      "updated_at": "2026-09-25 17:51:02",
+      "id": 10
+    },
+    {
+      "id": 8,
+      "tracking_code": "REQ-2026-2665",
+      "reporter_name": "Prem",
+      "equipment_name": "อุปกรณ์เครือข่าย",
+      "equipment_model": "AIS Router / Switch",
+      "issue_description": "เชื่อมต่ออินเทอร์เน็ตไม่ได้ สัญญาณ Wi-Fi หลุดบ่อย",
+      "department": "ทั่วไป",
+      "location": "อาคาร 4 ชั้น 4",
+      "phone": "0397785659",
+      "urgency": "emergency",
+      "status": "pending",
+      "technician_name": null,
+      "technician_notes": null,
+      "estimated_completion": null,
+      "repair_cost": 0,
+      "image_url": null,
+      "created_at": "2026-09-25 07:12:02",
+      "updated_at": "2026-09-25 07:12:02"
+    }
+  ],
+  "nextId": 11
+}
