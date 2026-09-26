@@ -2,8 +2,10 @@
   "name": "maintenance-request",
   "version": "1.0.0",
   "description": "ระบบแจ้งซ่อมบำรุงและติดตามสถานะ",
-  "main": "check-db.js",
+  "main": "server.js",
   "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
