@@ -254,8 +254,9 @@ app.use((req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-// Start server
-app.listen(PORT, () => {
+// Start server (bind 0.0.0.0 for cloud hosting compatibility)
+const HOST = '0.0.0.0';
+app.listen(PORT, HOST, () => {
   console.log('========================================================');
   console.log(`[NU Support Repair] ระบบแจ้งซ่อมและบริการสนับสนุนไอที พร้อมใช้งาน`);
   console.log(`[Main Web]: http://localhost:${PORT}`);
