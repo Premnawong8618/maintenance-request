@@ -9,7 +9,7 @@
   <title>NU Support Repair | ระบบแจ้งซ่อมและติดตามงาน</title>
   <meta name="description" content="NU Support Repair - ระบบแจ้งซ่อมและบริการสนับสนุนไอที แจ้งซ่อมคอมพิวเตอร์ โน้ตบุ๊ก เครื่องพิมพ์ และอุปกรณ์เครือข่าย พร้อมติดตามสถานะแบบเรียลไทม์">
 
-  <link rel="icon" type="image/x-icon" href="img/logo.png">
+  <link rel="icon" type="image/png" href="img/logo 002.png">
   <!-- Google Fonts: Prompt & Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,8 +28,8 @@
   <header class="navbar" id="mainNavbar">
     <div class="nav-container">
       <div class="nav-brand" onclick="navigateTo('home')">
-        <div class="brand-icon">
-          <i data-lucide="wrench"></i>
+        <div class="brand-icon has-logo">
+          <img src="img/logo 002.png" alt="NU Support Repair Logo" class="brand-logo-img">
         </div>
         <div class="brand-text">
           <span class="brand-title">NU Support Repair</span>

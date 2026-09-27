@@ -26,8 +26,8 @@
   <!-- ================= 1. ADMIN LOGIN VIEW (Displayed when not logged in) ================= -->
   <div id="adminLoginSection" class="admin-login-wrapper">
     <div class="admin-login-card">
-      <div class="admin-login-badge">
-        <i data-lucide="shield-check"></i>
+      <div class="brand-icon has-logo">
+          <img src="img/logo 002.png" alt="NU Support Repair Logo" class="brand-logo-img">
       </div>
       <h2 class="admin-login-title">NU Support Repair</h2>
       <p class="admin-login-desc">เข้าสู่ระบบสำหรับเจ้าหน้าที่ช่างและผู้ดูแลระบบ</p>
