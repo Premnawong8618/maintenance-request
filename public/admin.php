@@ -1,3 +1,6 @@
+<?php
+// NU Support Repair - Admin Portal
+?>
 <!DOCTYPE html>
 <html lang="th">
 <head>

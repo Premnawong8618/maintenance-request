@@ -1,3 +1,6 @@
+<?php
+// NU Support Repair - ระบบแจ้งซ่อมและบริการสนับสนุนไอที
+?>
 <!DOCTYPE html>
 <html lang="th">
 <head>

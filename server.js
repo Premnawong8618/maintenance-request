@@ -41,8 +41,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/uploads', express.static(uploadDir));
 
 // Admin Page Route (Requirement: no admin link in main page, type in URL directly)
-app.get('/admin', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'admin.html'));
+app.get(['/admin', '/admin.php'], (req, res) => {
+  const adminFile = fs.existsSync(path.join(__dirname, 'public', 'admin.php'))
+    ? path.join(__dirname, 'public', 'admin.php')
+    : path.join(__dirname, 'public', 'admin.html');
+  res.sendFile(adminFile);
 });
 
 // Admin Login API (Username: abcd, Password: 1234)
@@ -249,9 +252,12 @@ app.post('/api/db/reconnect', async (req, res) => {
   }
 });
 
-// Fallback to index.html for SPA routes (Express 5 compatible)
+// Fallback to index.php / index.html for SPA routes (Express 5 compatible)
 app.use((req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  const indexFile = fs.existsSync(path.join(__dirname, 'public', 'index.php'))
+    ? path.join(__dirname, 'public', 'index.php')
+    : path.join(__dirname, 'public', 'index.html');
+  res.sendFile(indexFile);
 });
 
 // Start server (bind 0.0.0.0 for cloud hosting compatibility)
