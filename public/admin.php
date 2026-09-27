@@ -19,7 +19,7 @@
   <script src="https://unpkg.com/lucide@latest"></script>
 
   <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -84,7 +84,7 @@
             <i data-lucide="user-check"></i>
             <span id="currentAdminName">ผู้ดูแลระบบ: abcd</span>
           </span>
-          <a href="/" target="_blank" class="btn btn-outline btn-sm" title="เปิดหน้าเว็บหลักสำหรับผู้ใช้งาน">
+          <a href="index.php" target="_blank" class="btn btn-outline btn-sm" title="เปิดหน้าเว็บหลักสำหรับผู้ใช้งาน">
             <i data-lucide="external-link"></i>
             <span>หน้าเว็บหลัก</span>
           </a>
@@ -488,6 +488,6 @@
   <div class="toast-container" id="toastContainer"></div>
 
   <!-- Admin Script -->
-  <script src="/js/admin.js"></script>
+  <script src="js/admin.js"></script>
 </body>
 </html>

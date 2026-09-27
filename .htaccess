@@ -1,0 +1,42 @@
+# ========================================================
+# Apache / LiteSpeed Configuration for Web Hosting
+# NU Support Repair - Maintenance Request System
+# ========================================================
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # 1. Route admin URL
+    RewriteRule ^admin/?$ admin.php [L,QSA]
+
+    # 2. Route all /api/* requests to api/index.php
+    RewriteRule ^api/?(.*)$ api/index.php [L,QSA]
+
+    # 3. Allow direct access to real files and directories
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+
+    # 4. Fallback for SPA routing if needed
+    RewriteRule ^(home|report|track|history)/?$ index.php [L,QSA]
+</IfModule>
+
+# Security: Block sensitive files from direct web access
+<FilesMatch "^(\.env|\.env\.example|database\.sql|local_storage\.json|\.git.*)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# Set default index
+DirectoryIndex index.php index.html
+
+# Prevent directory browsing
+Options -Indexes
+
+# Set UTF-8 encoding
+AddDefaultCharset UTF-8

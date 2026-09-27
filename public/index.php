@@ -19,7 +19,7 @@
   <script src="https://unpkg.com/lucide@latest"></script>
 
   <!-- Main Stylesheet (Orange Theme) -->
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -106,7 +106,7 @@
         </div>
 
         <div class="hero-image-wrap">
-          <img src="/images/hero_banner.jpg" alt="NU Support Repair Workstation" class="hero-banner-img">
+          <img src="images/hero_banner.jpg" alt="NU Support Repair Workstation" class="hero-banner-img">
         </div>
       </div>
 
@@ -952,6 +952,6 @@
   <div class="toast-container" id="toastContainer"></div>
 
   <!-- App Script -->
-  <script src="/js/app.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>

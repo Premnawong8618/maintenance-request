@@ -1,0 +1,25 @@
+# ========================================================
+# Apache / LiteSpeed Configuration for public directory
+# ========================================================
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # 1. Route admin URL
+    RewriteRule ^admin/?$ admin.php [L,QSA]
+
+    # 2. Route all /api/* requests to api/index.php
+    RewriteRule ^api/?(.*)$ api/index.php [L,QSA]
+
+    # 3. Allow direct access to real files and directories
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+
+    # 4. Fallback for SPA routing if needed
+    RewriteRule ^(home|report|track|history)/?$ index.php [L,QSA]
+</IfModule>
+
+DirectoryIndex index.php index.html
+Options -Indexes
+AddDefaultCharset UTF-8
